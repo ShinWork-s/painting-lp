@@ -3,831 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="安心・信頼の外壁塗装なら【会社名】にお任せください。戸建て住宅の外壁・屋根塗装専門店。今なら無料診断実施中！地域密着で迅速対応。10年保証付きで安心の施工をご提供します。">
-    <title>【地域名】で選ばれる外壁塗装専門店 | 今だけ特別割引キャンペーン実施中</title>
-    <style>
-        /* リセットCSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        /* 共通スタイル */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-            color: #0066cc;
-            position: relative;
-        }
-        
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: #0066cc;
-            margin: 15px auto;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-align: center;
-            transition: all 0.3s ease;
-            font-size: 18px;
-        }
-        
-        .btn-primary {
-            background: #ff6600;
-            color: white;
-            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
-        }
-        
-        .btn-primary:hover {
-            background: #e55c00;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
-        }
-        
-        /* ヘッダー */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #0066cc;
-        }
-        
-        .header-contact {
-            display: flex;
-            align-items: center;
-        }
-        
-        .header-tel {
-            margin-right: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #0066cc;
-        }
-        
-        .header-tel-icon {
-            margin-right: 5px;
-            font-size: 20px;
-        }
-        
-        /* メインビジュアル */
-        .mainvisual {
-            background: linear-gradient(rgba(0, 102, 204, 0.7), rgba(0, 102, 204, 0.7)), url('/api/placeholder/1200/600') no-repeat center center;
-            background-size: cover;
-            height: 90vh;
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            margin-top: 81px;
-            color: white;
-            text-align: center;
-        }
-        
-        .mainvisual-content {
-            width: 100%;
-        }
-        
-        .mainvisual-title {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-        
-        .mainvisual-subtitle {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        
-        /* キャンペーン */
-        .campaign {
-            background-color: #f9f9f9;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .campaign-title {
-            font-size: 32px;
-            color: #ff6600;
-            margin-bottom: 20px;
-        }
-        
-        .campaign-box {
-            background: white;
-            border: 3px solid #ff6600;
-            border-radius: 10px;
-            padding: 30px;
-            margin-top: 30px;
-            position: relative;
-        }
-        
-        .campaign-label {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #ff6600;
-            color: white;
-            padding: 5px 20px;
-            border-radius: 50px;
-            font-weight: bold;
-        }
-        
-        .campaign-price {
-            font-size: 42px;
-            font-weight: bold;
-            color: #ff6600;
-            margin: 20px 0;
-        }
-        
-        .campaign-price span {
-            font-size: 24px;
-        }
-        
-        .campaign-period {
-            font-size: 18px;
-            color: #ff0000;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        
-        /* 選ばれる理由 */
-        .reasons {
-            padding: 80px 0;
-            background: white;
-        }
-        
-        .reason-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 50px;
-        }
-        
-        .reason-item {
-            width: 30%;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        .reason-icon {
-            background: #0066cc;
-            color: white;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            margin: 0 auto 20px;
-        }
-        
-        .reason-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #0066cc;
-        }
-        
-        /* 施工事例 */
-        .works {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-        
-        .works-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .work-item {
-            width: 48%;
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .work-images {
-            display: flex;
-        }
-        
-        .work-image {
-            width: 50%;
-        }
-        
-        .work-content {
-            padding: 20px;
-        }
-        
-        .work-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #0066cc;
-        }
-        
-        .work-text {
-            margin-bottom: 10px;
-        }
-        
-        .work-meta {
-            display: flex;
-            justify-content: space-between;
-            color: #666;
-            font-size: 14px;
-        }
-        
-        /* サービス・料金 */
-        .services {
-            padding: 80px 0;
-        }
-        
-        .service-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .service-item {
-            width: 30%;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        .service-image {
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        
-        .service-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #0066cc;
-        }
-        
-        .price-table {
-            width: 100%;
-            margin-top: 50px;
-            border-collapse: collapse;
-        }
-        
-        .price-table th, .price-table td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .price-table th {
-            background: #0066cc;
-            color: white;
-        }
-        
-        .price-table tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-        
-        /* お客様の声 */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-        
-        .testimonial-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .testimonial-item {
-            width: 48%;
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        
-        .testimonial-item:before {
-            content: '"';
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-size: 60px;
-            color: #ddd;
-            font-family: serif;
-        }
-        
-        .testimonial-text {
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-        
-        .testimonial-author {
-            text-align: right;
-            font-weight: bold;
-        }
-        
-        .testimonial-meta {
-            color: #666;
-            font-size: 14px;
-        }
-        
-        /* 施工プロセス */
-        .process {
-            padding: 80px 0;
-        }
-        
-        .process-items {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            margin-top: 50px;
-        }
-        
-        .process-items:before {
-            content: '';
-            position: absolute;
-            top: 40px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: #0066cc;
-            z-index: 1;
-        }
-        
-        .process-item {
-            width: 18%;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .process-number {
-            width: 80px;
-            height: 80px;
-            background: #0066cc;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            font-weight: bold;
-            margin: 0 auto 20px;
-        }
-        
-        .process-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #0066cc;
-        }
-        
-        /* よくある質問 */
-        .faq {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            background: #0066cc;
-            color: white;
-            padding: 20px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .faq-q {
-            background: white;
-            color: #0066cc;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 20px;
-            display: flex;
-        }
-        
-        .faq-a {
-            background: #ff6600;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-        
-        /* 会社概要 */
-        .company {
-            padding: 80px 0;
-        }
-        
-        .company-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        
-        .company-data {
-            width: 48%;
-        }
-        
-        .company-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .company-table th, .company-table td {
-            border-bottom: 1px solid #ddd;
-            padding: 15px;
-        }
-        
-        .company-table th {
-            width: 30%;
-            text-align: left;
-            color: #0066cc;
-        }
-        
-        .company-map {
-            width: 48%;
-            height: 400px;
-            background: #eee;
-        }
-        
-        /* お問い合わせ */
-        .contact {
-            background: linear-gradient(rgba(0, 102, 204, 0.9), rgba(0, 102, 204, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
-            background-size: cover;
-            padding: 80px 0;
-            color: white;
-        }
-        
-        .contact-title {
-            color: white;
-        }
-        
-        .contact-title:after {
-            background: white;
-        }
-        
-        .contact-lead {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 18px;
-        }
-        
-        .contact-form {
-            background: white;
-            border-radius: 10px;
-            padding: 40px;
-            width: 80%;
-            margin: 0 auto;
-            color: #333;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        .form-required {
-            color: #ff0000;
-            margin-left: 5px;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        
-        textarea.form-control {
-            height: 150px;
-        }
-        
-        .form-button {
-            text-align: center;
-            margin-top: 30px;
-        }
-        
-        /* フッター */
-        footer {
-            background: #333;
-            color: white;
-            padding: 60px 0 20px;
-        }
-        
-        .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-        
-        .footer-info {
-            width: 30%;
-        }
-        
-        .footer-logo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .footer-nav {
-            width: 65%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .footer-nav-group {
-            width: 33.33%;
-            margin-bottom: 20px;
-        }
-        
-        .footer-nav-title {
-            font-weight: bold;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .footer-nav-list {
-            list-style: none;
-        }
-        
-        .footer-nav-item {
-            margin-bottom: 10px;
-        }
-        
-        .footer-nav-link {
-            color: rgba(255, 255, 255, 0.7);
-            transition: color 0.3s ease;
-        }
-        
-        .footer-nav-link:hover {
-            color: white;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-        
-        /* CTAフローティングボタン */
-        .floating-cta {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 999;
-        }
-        
-        .floating-btn {
-            display: block;
-            width: 200px;
-            padding: 15px;
-            background: #ff6600;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-weight: bold;
-            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
-            transition: all 0.3s ease;
-        }
-        
-        .floating-btn:hover {
-            background: #e55c00;
-            transform: translateY(-3px);
-        }
-        
-        /* レスポンシブ対応 */
-        @media (max-width: 992px) {
-            .section-title {
-                font-size: 28px;
-            }
-            
-            .mainvisual-title {
-                font-size: 36px;
-            }
-            
-            .mainvisual-subtitle {
-                font-size: 20px;
-            }
-            
-            .reason-item, .service-item {
-                width: 48%;
-            }
-            
-            .process-items:before {
-                display: none;
-            }
-            
-            .process-item {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                text-align: left;
-                margin-bottom: 30px;
-            }
-            
-            .process-number {
-                margin: 0 20px 0 0;
-            }
-            
-            .company-info {
-                flex-direction: column;
-            }
-            
-            .company-data, .company-map {
-                width: 100%;
-            }
-            
-            .company-map {
-                margin-top: 30px;
-            }
-            
-            .contact-form {
-                width: 95%;
-            }
-            
-            .footer-inner {
-                flex-direction: column;
-            }
-            
-            .footer-info, .footer-nav {
-                width: 100%;
-            }
-            
-            .footer-info {
-                margin-bottom: 30px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .section {
-                padding: 60px 0;
-            }
-            
-            .section-title {
-                font-size: 24px;
-            }
-            
-            .mainvisual {
-                height: 80vh;
-                min-height: 500px;
-            }
-            
-            .mainvisual-title {
-                font-size: 30px;
-            }
-            
-            .mainvisual-subtitle {
-                font-size: 18px;
-            }
-            
-            .header-tel {
-                display: none;
-            }
-            
-            .work-item, .testimonial-item {
-                width: 100%;
-            }
-            
-            .reason-item, .service-item {
-                width: 100%;
-            }
-            
-            .campaign-price {
-                font-size: 32px;
-            }
-            
-            .footer-nav-group {
-                width: 50%;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .btn {
-                padding: 15px 30px;
-                font-size: 16px;
-                width: 100%;
-            }
-            
-            .logo {
-                font-size: 20px;
-            }
-            
-            .campaign-box {
-                padding: 20px 15px;
-            }
-            
-            .footer-nav-group {
-                width: 100%;
-            }
-            
-            .floating-cta {
-                bottom: 20px;
-                right: 50%;
-                transform: translateX(50%);
-            }
-            
-            .floating-btn {
-                width: 100%;
-                padding: 12px;
-            }
-        }
-    </style>
+    <meta name="description" content="東京都世田谷区で選ばれる外壁塗装なら【会社名】にお任せください。戸建て住宅の外壁・屋根塗装専門店。今なら無料診断実施中！創業25年の実績と10年保証付きで安心の施工をご提供します。シリコン塗料、フッ素塗料など高品質塗料使用。">
+    <link rel="canonical" href="https://example.com/lp/exterior-painting/">
+    <title>東京都世田谷区で選ばれる外壁塗装専門店 | 今だけ特別割引キャンペーン実施中</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- スキーママークアップ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "【会社名】外壁塗装",
+      "image": "/api/placeholder/1200/600",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "〇〇町1-2-3",
+        "addressLocality": "世田谷区",
+        "addressRegion": "東京都",
+        "postalCode": "000-0000",
+        "addressCountry": "JP"
+      },
+      "telephone": "0120-000-000",
+      "url": "https://example.com/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "¥¥",
+      "servesCuisine": "外壁塗装、屋根塗装"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "塗装の目安はどのくらいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "一般的に外壁塗装は10〜15年、屋根塗装は15〜20年が目安です。ただし、使用する塗料や建物の環境によって異なります。無料診断で正確な状態をお伝えします。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "見積もりは無料ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、現地調査・お見積りは完全無料です。お気軽にご依頼ください。また、見積り後の強引な勧誘は一切行っておりませんのでご安心ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "工事期間はどのくらいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "一般的な戸建て住宅の場合、外壁・屋根塗装セットで約2週間程度です。天候や建物の状態により前後する場合がございます。"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- ヘッダー -->
@@ -838,7 +94,7 @@
                     <a href="#">【会社名】外壁塗装</a>
                 </div>
                 <div class="header-contact">
-                    <a href="tel:0120-000-000" class="header-tel">
+                    <a href="tel:0120-000-000" class="header-tel" aria-label="電話でのお問い合わせ">
                         <i class="fas fa-phone-alt header-tel-icon"></i>0120-000-000
                     </a>
                     <a href="#contact" class="btn btn-primary">無料お見積り</a>
@@ -852,7 +108,7 @@
         <div class="container">
             <div class="mainvisual-content">
                 <h1 class="mainvisual-title">あなたの大切な住まいを<br>高品質な塗装で美しく、強く</h1>
-                <p class="mainvisual-subtitle">創業〇〇年・施工実績〇〇件以上の確かな技術と信頼</p>
+                <p class="mainvisual-subtitle">創業25年・施工実績5,000件以上の確かな技術と信頼</p>
                 <a href="#contact" class="btn btn-primary">今すぐ無料診断を予約する</a>
             </div>
         </div>
@@ -862,10 +118,16 @@
     <section class="campaign">
         <div class="container">
             <h2 class="campaign-title">期間限定！決算特別キャンペーン実施中</h2>
-            <p>通常価格から最大30%OFF＋オプション工事1つ無料</p>
+            <p class="campaign-description">
+                多くのお客様にご好評いただいているキャンペーンを今年も実施！この機会をお見逃しなく。
+                2023年度施工実績No.1の当社だからできる特別価格をご提供します。
+            </p>
             <div class="campaign-box">
                 <span class="campaign-label">外壁+屋根セット塗装</span>
                 <div class="campaign-price">98,000円<span>/坪</span></div>
+                <p class="campaign-details">
+                    通常価格より<span class="highlight-red">最大30%OFF</span>＋オプション工事1つ無料
+                </p>
                 <p>高品質シリコン塗料使用・足場代込み・保証10年付き</p>
                 <a href="#contact" class="btn btn-primary">詳しい見積もりを依頼する</a>
                 <p class="campaign-period">※キャンペーン期間：〇〇〇〇年〇月〇日まで</p>
@@ -877,136 +139,55 @@
     <section class="reasons" id="reasons">
         <div class="container">
             <h2 class="section-title">選ばれる6つの理由</h2>
+            <p class="section-subtitle">
+                世田谷区で多くのお客様に選ばれ続ける理由があります
+            </p>
             <div class="reason-items">
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-medal"></i>
                     </div>
-                    <h3 class="reason-title">創業〇〇年の実績</h3>
-                    <p>地域密着で〇〇年。多くのお客様に選ばれ続けてきた確かな実績があります。</p>
+                    <h3 class="reason-title">創業25年の実績</h3>
+                    <p class="reason-text">地域密着で25年。5,000件以上の施工実績があり、リピート率は業界平均の2倍となる60%を誇ります。豊富な経験から、お客様のニーズに合った最適な提案をいたします。</p>
                 </div>
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-paint-roller"></i>
                     </div>
                     <h3 class="reason-title">職人直営の高品質施工</h3>
-                    <p>外注業者は使わず、自社の熟練職人による丁寧な施工でムラや剥がれを防ぎます。</p>
+                    <p class="reason-text">外注業者は使わず、平均経験15年以上の自社の熟練職人による丁寧な施工でムラや剥がれを防ぎます。1級塗装技能士が品質管理を徹底しています。</p>
                 </div>
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3 class="reason-title">最長10年の長期保証</h3>
-                    <p>施工後も安心の長期保証。万が一の際も迅速に対応いたします。</p>
+                    <p class="reason-text">施工後も安心の長期保証。塗料メーカーとの共同保証を実施。万が一の際も24時間以内の初期対応、迅速な補修で安心をお届けします。</p>
                 </div>
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-file-invoice-dollar"></i>
                     </div>
                     <h3 class="reason-title">明朗会計・追加費用なし</h3>
-                    <p>見積り金額以外の追加費用は一切発生しません。安心の明朗会計です。</p>
+                    <p class="reason-text">見積り金額以外の追加費用は一切発生しません。見積り時に詳細な調査を行い、必要な工程をすべて含めた正確な金額をご提示。安心の明朗会計です。</p>
                 </div>
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-thumbs-up"></i>
                     </div>
                     <h3 class="reason-title">お客様満足度98%</h3>
-                    <p>施工後のアンケートで98%のお客様に「満足」と評価いただいています。</p>
+                    <p class="reason-text">施工後のアンケート調査で98%のお客様に「満足」「とても満足」と評価いただいています。第三者機関による顧客満足度調査でも地域No.1の評価をいただきました。</p>
                 </div>
                 <div class="reason-item">
                     <div class="reason-icon">
                         <i class="fas fa-home"></i>
                     </div>
                     <h3 class="reason-title">無料点検・診断</h3>
-                    <p>お住まいの状態を専門家が無料で診断。本当に必要な工事のみをご提案します。</p>
+                    <p class="reason-text">お住まいの状態を専門家が無料で診断。プロの目で現状を確認し、本当に必要な工事のみをご提案します。「まだ塗り替えは必要ない」とお伝えすることもあります。</p>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 40px;">
+            <div class="text-center top-margin">
                 <a href="#contact" class="btn btn-primary">無料診断を予約する</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 施工事例 -->
-    <section class="works" id="works">
-        <div class="container">
-            <h2 class="section-title">施工事例</h2>
-            <div class="works-items">
-                <div class="work-item">
-                    <div class="work-images">
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工前">
-                        </div>
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工後">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">築25年戸建て外壁・屋根塗装</h3>
-                        <p class="work-text">劣化が進んでいた外壁をパーフェクトシリーズで塗装。色あせや剥がれを解消し、新築のような美しさを取り戻しました。</p>
-                        <div class="work-meta">
-                            <span>施工地域：〇〇市〇〇町</span>
-                            <span>施工期間：14日</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-images">
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工前">
-                        </div>
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工後">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">築18年戸建て外壁塗装</h3>
-                        <p class="work-text">紫外線による色あせが目立っていた外壁を、耐候性の高いシリコン塗料で塗装。美観の向上と耐久性アップを実現しました。</p>
-                        <div class="work-meta">
-                            <span>施工地域：〇〇市〇〇町</span>
-                            <span>施工期間：10日</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-images">
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工前">
-                        </div>
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工後">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">築15年戸建て屋根塗装</h3>
-                        <p class="work-text">経年劣化により防水性が低下していた屋根を、遮熱効果のある塗料で塗装。夏の室内温度上昇を抑える効果も得られました。</p>
-                        <div class="work-meta">
-                            <span>施工地域：〇〇市〇〇町</span>
-                            <span>施工期間：7日</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-images">
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工前">
-                        </div>
-                        <div class="work-image">
-                            <img src="/api/placeholder/400/300" alt="施工後">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">築30年戸建てフルリフォーム</h3>
-                        <p class="work-text">外壁の一部に亀裂が入っていたため補修を行い、外壁・屋根共に高品質な塗料で塗装。見違えるような仕上がりになりました。</p>
-                        <div class="work-meta">
-                            <span>施工地域：〇〇市〇〇町</span>
-                            <span>施工期間：21日</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="#contact" class="btn btn-primary">あなたの家の施工イメージを確認する</a>
             </div>
         </div>
     </section>
@@ -1015,27 +196,77 @@
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">サービス・料金</h2>
+            <p class="service-intro">
+                お客様のニーズや予算に合わせた最適な塗装プランをご提案します。
+                すべての工事に10年保証を付け、安心の施工をお約束します。
+            </p>
             <div class="service-items">
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="/api/placeholder/400/300" alt="外壁塗装">
+                        <img src="/api/placeholder/400/300" alt="外壁塗装の施工風景 - 専門の職人が丁寧に塗装している様子">
                     </div>
                     <h3 class="service-title">外壁塗装</h3>
-                    <p>耐候性・防水性に優れた高品質塗料を使用し、美しさと保護性を両立した外壁塗装を提供します。</p>
+                    <p class="service-description">耐候性・防水性に優れた高品質塗料を使用し、美しさと保護性を両立した外壁塗装を提供します。建物を長持ちさせ、資産価値を高めます。</p>
                 </div>
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="/api/placeholder/400/300" alt="屋根塗装">
+                        <img src="/api/placeholder/400/300" alt="屋根塗装の施工風景 - 専門職人が安全装備をして屋根を塗装している様子">
                     </div>
                     <h3 class="service-title">屋根塗装</h3>
-                    <p>紫外線や雨風から家を守る屋根塗装。遮熱効果のある塗料もご用意しています。</p>
+                    <p class="service-description">紫外線や雨風から家を守る屋根塗装。遮熱効果のある塗料も豊富に取り揃え、夏の電気代削減にも貢献します。</p>
                 </div>
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="/api/placeholder/400/300" alt="その他リフォーム">
+                        <img src="/api/placeholder/400/300" alt="その他リフォームの施工風景 - ベランダ防水工事を行っている様子">
                     </div>
                     <h3 class="service-title">その他リフォーム</h3>
-                    <p>雨樋交換、ベランダ防水、破風板交換などの各種リフォームにも対応しています。</p>
+                    <p class="service-description">雨樋交換、ベランダ防水、破風板交換などの各種リフォームにも対応。外装全般のメンテナンスで建物を総合的に保護します。</p>
+                </div>
+            </div>
+            
+            <div class="paint-types">
+                <h3 class="paint-types-title">使用する塗料の種類と特徴</h3>
+                <div class="paint-items">
+                    <div class="paint-item">
+                        <h4 class="paint-name">シリコン塗料</h4>
+                        <ul class="paint-features">
+                            <li>耐用年数：10〜15年</li>
+                            <li>特徴：バランスの良い性能と価格</li>
+                            <li>適性：一般住宅に最適</li>
+                            <li>メリット：コストパフォーマンスが高い</li>
+                        </ul>
+                        <p>最もポピュラーな塗料で、耐久性と価格のバランスが良く、多くのお客様に選ばれています。色褪せに強く、防カビ・防藻性能も備えています。</p>
+                    </div>
+                    <div class="paint-item">
+                        <h4 class="paint-name">フッ素塗料</h4>
+                        <ul class="paint-features">
+                            <li>耐用年数：15〜20年</li>
+                            <li>特徴：最高レベルの耐久性</li>
+                            <li>適性：長期間メンテナンスを抑えたい方</li>
+                            <li>メリット：塗り替え回数の削減</li>
+                        </ul>
+                        <p>最高グレードの塗料で、紫外線や雨風に対する抵抗力が非常に強く、長期間美観を維持します。初期投資は高めですが、長い目で見るとコスト効率が良くなります。</p>
+                    </div>
+                    <div class="paint-item">
+                        <h4 class="paint-name">遮熱塗料</h4>
+                        <ul class="paint-features">
+                            <li>耐用年数：10〜15年</li>
+                            <li>特徴：太陽熱を反射して室内温度上昇を抑制</li>
+                            <li>適性：夏の暑さ対策をしたい方</li>
+                            <li>メリット：冷房費の削減効果</li>
+                        </ul>
+                        <p>特殊な顔料を配合し、太陽光を反射させることで建物の温度上昇を抑えます。夏場の室内温度を3〜5℃下げる効果があり、エコで電気代の節約にもなります。</p>
+                    </div>
+                    <div class="paint-item">
+                        <h4 class="paint-name">ラジカル塗料</h4>
+                        <ul class="paint-features">
+                            <li>耐用年数：12〜18年</li>
+                            <li>特徴：セルフクリーニング効果</li>
+                            <li>適性：メンテナンスの手間を減らしたい方</li>
+                            <li>メリット：汚れが付きにくく、美観を維持</li>
+                        </ul>
+                        <p>光触媒効果により、雨で汚れを洗い流す性質を持っています。特に汚れやすい環境にある住宅におすすめで、常に美しい外観を保ちたい方に人気です。</p>
+                    </div>
                 </div>
             </div>
             
@@ -1072,39 +303,103 @@
                 </tr>
             </table>
             
-            <p style="margin-top: 30px; text-align: center;">※上記は目安価格です。正確なお見積りは無料診断後にご提案いたします。</p>
+            <p class="price-note">※上記は目安価格です。正確なお見積りは無料診断後にご提案いたします。建物の状態や規模によって価格は変動します。</p>
             
-            <div style="text-align: center; margin-top: 40px;">
+            <div class="text-center top-margin">
                 <a href="#contact" class="btn btn-primary">無料お見積りを依頼する</a>
             </div>
         </div>
     </section>
 
-    <!-- お客様の声 -->
-    <section class="testimonials" id="testimonials">
+    <!-- 施工事例 -->
+    <section class="works" id="works">
         <div class="container">
-            <h2 class="section-title">お客様の声</h2>
-            <div class="testimonial-items">
-                <div class="testimonial-item">
-                    <p class="testimonial-text">他社と比較検討しましたが、担当者の方の誠実な対応と丁寧な説明で決めました。実際の施工も非常に丁寧で、仕上がりに大満足しています。近所の方からも「きれいになったね」と言われて嬉しいです。</p>
-                    <div class="testimonial-author">〇〇市 S様</div>
-                    <div class="testimonial-meta">築23年戸建て 外壁・屋根塗装</div>
+            <h2 class="section-title">施工事例</h2>
+            <p class="section-subtitle">世田谷区を中心に多数の施工実績があります</p>
+            <div class="works-items">
+                <div class="work-item">
+                    <div class="work-images">
+                        <div class="work-image">
+                            <span class="work-image-label">施工前</span>
+                            <img src="/api/placeholder/400/300" alt="築25年戸建て住宅の外壁塗装前の状態 - 色あせや塗膜の剥がれが見られます">
+                        </div>
+                        <div class="work-image">
+                            <span class="work-image-label">施工後</span>
+                            <img src="/api/placeholder/400/300" alt="築25年戸建て住宅の外壁塗装後の状態 - 鮮やかできれいな外観に生まれ変わりました">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">築25年戸建て外壁・屋根塗装</h3>
+                        <p class="work-text">劣化が進んでいた外壁をパーフェクトシリーズで塗装。色あせや剥がれを解消し、新築のような美しさを取り戻しました。遮熱塗料の使用により、夏場の室内温度も3〜5℃下がったとお喜びいただいています。</p>
+                        <div class="work-meta">
+                            <span>施工地域：世田谷区松原</span>
+                            <span>施工期間：14日</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item">
-                    <p class="testimonial-text">塗装が初めてだったので不安でしたが、分からないことを何度も質問しても親切に答えてくださいました。工事中も近隣への配慮が行き届いており、安心してお任せできました。</p>
-                    <div class="testimonial-author">〇〇市 K様</div>
-                    <div class="testimonial-meta">築17年戸建て 外壁塗装</div>
+                <div class="work-item">
+                    <div class="work-images">
+                        <div class="work-image">
+                            <span class="work-image-label">施工前</span>
+                            <img src="/api/placeholder/400/300" alt="築18年戸建て住宅の外壁塗装前の状態 - 紫外線による色あせが目立ちます">
+                        </div>
+                        <div class="work-image">
+                            <span class="work-image-label">施工後</span>
+                            <img src="/api/placeholder/400/300" alt="築18年戸建て住宅の外壁塗装後の状態 - 明るい色調で美しく蘇った外観">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">築18年戸建て外壁塗装</h3>
+                        <p class="work-text">紫外線による色あせが目立っていた外壁を、耐候性の高いシリコン塗料で塗装。美観の向上と耐久性アップを実現しました。お客様のご要望で淡いベージュ系のやさしい色合いに仕上げ、街並みに調和した外観になりました。</p>
+                        <div class="work-meta">
+                            <span>施工地域：世田谷区桜</span>
+                            <span>施工期間：10日</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item">
-                    <p class="testimonial-text">屋根の劣化が気になっていましたが、無料診断で状態を詳しく説明してもらえました。必要な部分だけの修理と塗装を提案してくれて、余計な費用がかからなかったのが良かったです。</p>
-                    <div class="testimonial-author">〇〇市 T様</div>
-                    <div class="testimonial-meta">築28年戸建て 屋根塗装</div>
+                <div class="work-item">
+                    <div class="work-images">
+                        <div class="work-image">
+                            <span class="work-image-label">施工前</span>
+                            <img src="/api/placeholder/400/300" alt="築15年戸建て住宅の屋根塗装前の状態 - 色あせて防水性が低下した屋根">
+                        </div>
+                        <div class="work-image">
+                            <span class="work-image-label">施工後</span>
+                            <img src="/api/placeholder/400/300" alt="築15年戸建て住宅の屋根塗装後の状態 - 遮熱効果のある塗料で保護された屋根">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">築15年戸建て屋根塗装</h3>
+                        <p class="work-text">経年劣化により防水性が低下していた屋根を、遮熱効果のある塗料で塗装。夏の室内温度上昇を抑える効果も得られました。雨漏り対策として棟板金の交換も同時に行い、防水性を高めました。</p>
+                        <div class="work-meta">
+                            <span>施工地域：世田谷区等々力</span>
+                            <span>施工期間：7日</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item">
-                    <p class="testimonial-text">職人さんの技術が素晴らしく、塗装後の仕上がりに感動しました。予算内で最高の提案をしてくれたので、大変満足しています。また10年後もお願いしたいと思います。</p>
-                    <div class="testimonial-author">〇〇市 M様</div>
-                    <div class="testimonial-meta">築20年戸建て 外壁・屋根塗装</div>
+                <div class="work-item">
+                    <div class="work-images">
+                        <div class="work-image">
+                            <span class="work-image-label">施工前</span>
+                            <img src="/api/placeholder/400/300" alt="築30年戸建て住宅のフルリフォーム前の状態 - 壁面に亀裂が入り老朽化が目立つ外観">
+                        </div>
+                        <div class="work-image">
+                            <span class="work-image-label">施工後</span>
+                            <img src="/api/placeholder/400/300" alt="築30年戸建て住宅のフルリフォーム後の状態 - モダンな色合いで生まれ変わった外観">
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">築30年戸建てフルリフォーム</h3>
+                        <p class="work-text">外壁の一部に亀裂が入っていたため補修を行い、外壁・屋根共に高品質な塗料で塗装。見違えるような仕上がりになりました。防水工事と一部張り替え工事も含めた総合的なリフォームで住宅の寿命を大幅に延ばすことができました。</p>
+                        <div class="work-meta">
+                            <span>施工地域：世田谷区成城</span>
+                            <span>施工期間：21日</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="text-center top-margin">
+                <a href="#contact" class="btn btn-primary">あなたの家の施工イメージを確認する</a>
             </div>
         </div>
     </section>
@@ -1113,40 +408,130 @@
     <section class="process" id="process">
         <div class="container">
             <h2 class="section-title">施工の流れ</h2>
+            <p class="process-intro">
+                お問い合わせから施工完了まで、お客様に安心していただくために丁寧な対応を心がけています。
+                一般的な施工の流れをご紹介します。
+            </p>
             <div class="process-items">
                 <div class="process-item">
                     <div class="process-number">1</div>
                     <div>
                         <h3 class="process-title">無料お見積り・ご相談</h3>
-                        <p>お電話またはお問い合わせフォームよりご連絡ください。ご都合の良い日時にお伺いします。</p>
+                        <p class="process-description">お電話またはお問い合わせフォームよりご連絡ください。ご都合の良い日時にお伺いします。ご要望やご不安点などをお聞かせください。</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">2</div>
                     <div>
                         <h3 class="process-title">現地調査・お見積り</h3>
-                        <p>建物の状態を詳しく調査し、最適な施工方法と正確なお見積りをご提案します。</p>
+                        <p class="process-description">建物の状態を詳しく調査し、最適な施工方法と正確なお見積りをご提案します。塗料のサンプルもお見せしながら、色や仕上がりのイメージをご説明します。</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">3</div>
                     <div>
                         <h3 class="process-title">ご契約・日程調整</h3>
-                        <p>ご納得いただけましたらご契約。お客様のご都合に合わせて施工日程を調整します。</p>
+                        <p class="process-description">ご納得いただけましたらご契約。お客様のご都合に合わせて施工日程を調整します。近隣の方へのご挨拶も当社スタッフが責任を持って行います。</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">4</div>
                     <div>
                         <h3 class="process-title">施工開始</h3>
-                        <p>足場設置から始まり、高圧洗浄、下地処理、塗装、仕上げまで丁寧に行います。</p>
+                        <p class="process-description">足場設置から始まり、高圧洗浄、下地処理、塗装、仕上げまで丁寧に行います。工程ごとに写真を撮影し、お客様に進捗状況をご報告します。</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">5</div>
                     <div>
                         <h3 class="process-title">完了検査・お引き渡し</h3>
-                        <p>施工完了後は、お客様立ち会いのもと完了検査を行い、満足いただけたらお引き渡しとなります。</p>
+                        <p class="process-description">施工完了後は、お客様立ち会いのもと完了検査を行い、満足いただけたらお引き渡しとなります。保証書をお渡しし、アフターフォローについても説明いたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">お客様の声</h2>
+            <p class="section-subtitle">実際に施工させていただいたお客様からの評価です</p>
+            <div class="testimonial-items">
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">他社と比較検討しましたが、担当者の方の誠実な対応と丁寧な説明で決めました。実際の施工も非常に丁寧で、仕上がりに大満足しています。近所の方からも「きれいになったね」と言われて嬉しいです。雨の日も気にならなくなりました。</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/50/50" alt="お客様の写真">
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">S.K様（58歳）</div>
+                            <div class="testimonial-meta">世田谷区桜丘・築23年戸建て 外壁・屋根塗装</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">塗装が初めてだったので不安でしたが、分からないことを何度も質問しても親切に答えてくださいました。工事中も近隣への配慮が行き届いており、安心してお任せできました。遮熱塗料にしたおかげで、夏の暑さが和らぎ、エアコン代も節約できそうです。</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/50/50" alt="お客様の写真">
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">K.T様（42歳）</div>
+                            <div class="testimonial-meta">世田谷区経堂・築17年戸建て 外壁塗装</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">屋根の劣化が気になっていましたが、無料診断で状態を詳しく説明してもらえました。必要な部分だけの修理と塗装を提案してくれて、余計な費用がかからなかったのが良かったです。雨漏りの心配がなくなり、安心して暮らせるようになりました。</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/50/50" alt="お客様の写真">
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">T.M様（65歳）</div>
+                            <div class="testimonial-meta">世田谷区用賀・築28年戸建て 屋根塗装</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">職人さんの技術が素晴らしく、塗装後の仕上がりに感動しました。予算内で最高の提案をしてくれたので、大変満足しています。家が新築のように生まれ変わり、近所の評判も上々です。また10年後もお願いしたいと思います。</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/50/50" alt="お客様の写真">
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">M.Y様（50歳）</div>
+                            <div class="testimonial-meta">世田谷区成城・築20年戸建て 外壁・屋根塗装</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1157,49 +542,117 @@
     <section class="faq" id="faq">
         <div class="container">
             <h2 class="section-title">よくある質問</h2>
+            <p class="faq-intro">
+                お客様からよくいただくご質問をまとめました。
+                他にもご不明点があれば、お気軽にお問い合わせください。
+            </p>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="faq-q">Q</span>塗装の目安はどのくらいですか？
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">塗装の目安はどのくらいですか？</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
                     <span class="faq-a">A</span>
-                    <div>一般的に外壁塗装は10〜15年、屋根塗装は15〜20年が目安です。ただし、使用する塗料や建物の環境によって異なります。無料診断で正確な状態をお伝えします。</div>
+                    <div class="faq-answer-text">
+                        一般的に外壁塗装は10〜15年、屋根塗装は15〜20年が目安です。ただし、使用する塗料や建物の環境によって異なります。特に紫外線の強い南面や西面は劣化が早まる傾向があります。また、海に近い地域では塩害の影響で劣化が進みやすいため、若干短めの周期になることも。無料診断で正確な状態をお伝えします。
+                    </div>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="faq-q">Q</span>見積もりは無料ですか？
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">見積もりは無料ですか？断ることはできますか？</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
                     <span class="faq-a">A</span>
-                    <div>はい、現地調査・お見積りは完全無料です。お気軽にご依頼ください。また、見積り後の強引な勧誘は一切行っておりませんのでご安心ください。</div>
+                    <div class="faq-answer-text">
+                        はい、現地調査・お見積りは完全無料です。お気軽にご依頼ください。また、見積り後の強引な勧誘は一切行っておりませんのでご安心ください。見積り内容にご納得いただけない場合は、遠慮なくお断りいただいて構いません。納得して喜んでいただける施工を心がけております。
+                    </div>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="faq-q">Q</span>工事期間はどのくらいですか？
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">工事期間はどのくらいですか？生活に影響はありますか？</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
                     <span class="faq-a">A</span>
-                    <div>一般的な戸建て住宅の場合、外壁・屋根塗装セットで約2週間程度です。天候や建物の状態により前後する場合がございます。</div>
+                    <div class="faq-answer-text">
+                        一般的な戸建て住宅の場合、外壁・屋根塗装セットで約2週間程度です。天候や建物の状態により前後する場合がございます。工事中も通常通りの生活が可能ですが、窓を開けられない時間帯があったり、騒音が発生することがあります。事前に詳しいスケジュールをお知らせし、ご不便を最小限に抑えるよう配慮いたします。
+                    </div>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="faq-q">Q</span>支払い方法について教えてください。
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">塗料はどのように選べばよいですか？</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
                     <span class="faq-a">A</span>
-                    <div>現金払いの他、各種クレジットカード、銀行振込に対応しております。また、リフォームローンもご用意しておりますので、お気軽にご相談ください。</div>
+                    <div class="faq-answer-text">
+                        塗料選びは予算、耐久性、機能性などを総合的に考慮することが大切です。シリコン塗料はコストパフォーマンスに優れ、フッ素塗料は耐久性が高く、遮熱塗料は断熱効果があります。お客様のご予算やライフプランに合わせて最適な塗料をご提案いたします。実際の塗料サンプルも見ていただきながら、色や質感もご確認いただけます。
+                    </div>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="faq-q">Q</span>保証はありますか？
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">支払い方法について教えてください。</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
                 </div>
                 <div class="faq-answer">
                     <span class="faq-a">A</span>
-                    <div>はい、使用する塗料によって5〜10年の長期保証をお付けしております。保証期間内に塗膜の剥がれや膨れなどの不具合が生じた場合は無償で補修いたします。</div>
+                    <div class="faq-answer-text">
+                        現金払いの他、各種クレジットカード、銀行振込に対応しております。また、最長10年のリフォームローンもご用意しておりますので、無理なく計画的に塗装工事をすることが可能です。お支払い条件もご相談に応じて柔軟に対応いたしますので、お気軽にご相談ください。
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="faq-q">Q</span>
+                    <div class="faq-question-text">保証はありますか？万が一の場合はどうなりますか？</div>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <span class="faq-a">A</span>
+                    <div class="faq-answer-text">
+                        はい、使用する塗料によって5〜10年の長期保証をお付けしております。保証期間内に塗膜の剥がれや膨れなどの不具合が生じた場合は無償で補修いたします。また、弊社は創業25年の実績があり、長期的なアフターフォローも安心です。保証書だけでなく、施工記録も残しておりますので、担当者が変わっても対応できる体制を整えています。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メンテナンス・アドバイス -->
+    <section class="maintenance" id="maintenance">
+        <div class="container">
+            <h2 class="section-title">塗装後のメンテナンスと季節別アドバイス</h2>
+            <p class="section-subtitle">お住まいを長持ちさせるためのヒントをご紹介します</p>
+            <div class="maintenance-content">
+                <div class="maintenance-image">
+                    <img src="/api/placeholder/600/400" alt="季節ごとの住宅メンテナンスイメージ - 四季折々の住宅ケア方法を示す画像">
+                </div>
+                <div class="maintenance-text">
+                    <h3 class="maintenance-title">長持ちさせるための季節別ケア</h3>
+                    <p class="maintenance-description">
+                        塗装は家を守る大切な「外壁」です。適切なケアで塗装の寿命を延ばし、
+                        住まいの資産価値を維持しましょう。季節ごとに気をつけたいポイントをご紹介します。
+                    </p>
+                    <ul class="maintenance-tips">
+                        <li><strong>春（3〜5月）</strong>：花粉や黄砂が付着しやすい時期。軽い水洗いがおすすめです。</li>
+                        <li><strong>夏（6〜8月）</strong>：強い紫外線から塗膜を守るため、日よけや植栽の工夫を。</li>
+                        <li><strong>秋（9〜11月）</strong>：落ち葉が雨樋に詰まらないよう定期的に清掃を。</li>
+                        <li><strong>冬（12〜2月）</strong>：結露対策として室内の換気を心がけましょう。</li>
+                    </ul>
+                    <p class="maintenance-description">
+                        また、年に1回は目視点検を行い、変色や剥がれがないか確認することをおすすめします。
+                        気になる点があれば、お気軽に当社の無料点検サービスをご利用ください。
+                    </p>
+                    <a href="#contact" class="btn btn-secondary">無料点検を予約する</a>
                 </div>
             </div>
         </div>
@@ -1209,6 +662,10 @@
     <section class="company" id="company">
         <div class="container">
             <h2 class="section-title">会社概要</h2>
+            <p class="company-intro">
+                創業25年、地域密着型の外壁塗装専門店として多くのお客様に選ばれてきました。
+                職人技術と誠実な対応で、安心と信頼をお届けします。
+            </p>
             <div class="company-info">
                 <div class="company-data">
                     <table class="company-table">
@@ -1218,7 +675,7 @@
                         </tr>
                         <tr>
                             <th>所在地</th>
-                            <td>〇〇県〇〇市〇〇町1-2-3</td>
+                            <td>東京都世田谷区〇〇町1-2-3</td>
                         </tr>
                         <tr>
                             <th>電話番号</th>
@@ -1234,21 +691,25 @@
                         </tr>
                         <tr>
                             <th>創業</th>
-                            <td>〇〇〇〇年</td>
+                            <td>2000年（令和5年で創業25年）</td>
                         </tr>
                         <tr>
                             <th>資格</th>
-                            <td>塗装技能士、防水施工技能士、建築士</td>
+                            <td>1級塗装技能士、防水施工技能士、建築士</td>
                         </tr>
                         <tr>
                             <th>対応エリア</th>
-                            <td>〇〇市、〇〇市、〇〇町周辺</td>
+                            <td>世田谷区、目黒区、杉並区、渋谷区、狛江市、調布市、町田市周辺</td>
+                        </tr>
+                        <tr>
+                            <th>施工実績</th>
+                            <td>年間300件以上、累計5,000件以上（2023年12月現在）</td>
                         </tr>
                     </table>
                 </div>
                 <div class="company-map">
                     <!-- 地図を表示 -->
-                    <img src="/api/placeholder/600/400" alt="会社所在地マップ">
+                    <img src="/api/placeholder/600/400" alt="会社所在地マップ - 東京都世田谷区の地図と会社の位置">
                 </div>
             </div>
         </div>
@@ -1259,7 +720,33 @@
         <div class="container">
             <h2 class="section-title contact-title">お問い合わせ</h2>
             <p class="contact-lead">無料お見積り・ご相談はこちらから</p>
+            
+            <div class="contact-options">
+                <div class="contact-option">
+                    <h3 class="contact-option-title">お電話でのお問い合わせ</h3>
+                    <p class="contact-option-description">専門スタッフが丁寧に対応いたします</p>
+                    <div class="contact-tel">
+                        <i class="fas fa-phone-alt"></i> 0120-000-000
+                    </div>
+                    <p class="contact-hours">受付時間：9:00〜18:00（日曜定休）</p>
+                    <a href="tel:0120-000-000" class="btn btn-primary">今すぐ電話する</a>
+                </div>
+                <div class="contact-option">
+                    <h3 class="contact-option-title">LINEでのお問い合わせ</h3>
+                    <p class="contact-option-description">写真を送って手軽に相談できます</p>
+                    <div class="line-icon">
+                        <i class="fab fa-line"></i>
+                    </div>
+                    <p>友だち追加で簡単見積もり依頼<br>24時間受付中</p>
+                    <a href="#" class="btn btn-primary">友だち追加する</a>
+                </div>
+            </div>
+            
             <div class="contact-form">
+                <div class="form-intro">
+                    <h3 class="form-intro-title">フォームでのお問い合わせ</h3>
+                    <p>下記フォームに必要事項をご入力ください。<br>48時間以内に担当者よりご連絡いたします。</p>
+                </div>
                 <form>
                     <div class="form-group">
                         <label class="form-label">お名前<span class="form-required">*</span></label>
@@ -1268,6 +755,7 @@
                     <div class="form-group">
                         <label class="form-label">電話番号<span class="form-required">*</span></label>
                         <input type="tel" class="form-control" placeholder="例：090-1234-5678" required>
+                        <p class="form-note">※日中ご連絡がつきやすい番号をご入力ください</p>
                     </div>
                     <div class="form-group">
                         <label class="form-label">メールアドレス</label>
@@ -1275,22 +763,65 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">ご住所<span class="form-required">*</span></label>
-                        <input type="text" class="form-control" placeholder="例：〇〇県〇〇市〇〇町1-2-3" required>
+                        <input type="text" class="form-control" placeholder="例：東京都世田谷区〇〇町1-2-3" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">建物の築年数</label>
+                        <select class="form-control">
+                            <option value="">選択してください</option>
+                            <option value="5">5年未満</option>
+                            <option value="10">5〜10年</option>
+                            <option value="15">10〜15年</option>
+                            <option value="20">15〜20年</option>
+                            <option value="25">20〜25年</option>
+                            <option value="30">25〜30年</option>
+                            <option value="35">30年以上</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label class="form-label">ご希望のサービス</label>
                         <select class="form-control">
-                            <option>外壁塗装</option>
-                            <option>屋根塗装</option>
-                            <option>外壁・屋根塗装セット</option>
-                            <option>その他リフォーム</option>
-                            <option>相談したい・わからない</option>
+                            <option value="">選択してください</option>
+                            <option value="wall">外壁塗装</option>
+                            <option value="roof">屋根塗装</option>
+                            <option value="both">外壁・屋根塗装セット</option>
+                            <option value="other">その他リフォーム</option>
+                            <option value="unknown">相談したい・わからない</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label class="form-label">お問い合わせ内容</label>
                         <textarea class="form-control" placeholder="ご質問・ご相談内容をお書きください"></textarea>
                     </div>
+                    <div class="form-group">
+                        <label class="form-label">ご希望の連絡方法</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="contact-method" value="phone" checked>
+                                <span>電話</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="contact-method" value="email">
+                                <span>メール</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-policy">
+                        <h4 class="privacy-policy-title">個人情報の取り扱いについて</h4>
+                        <p>
+                            当社は、お客様の個人情報を厳重に管理し、お見積りやご相談対応の目的以外には使用いたしません。
+                            第三者への提供も行いません。詳細は「プライバシーポリシー」をご確認ください。
+                        </p>
+                    </div>
+                    
+                    <div class="form-check">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>個人情報の取り扱いに同意する</span>
+                        </label>
+                    </div>
+                    
                     <div class="form-button">
                         <button type="submit" class="btn btn-primary">送信する</button>
                     </div>
@@ -1302,4 +833,59 @@
     <!-- フッター -->
     <footer>
         <div class="container">
-            <div class="footer-inner
+            <div class="footer-inner">
+                <div class="footer-info">
+                    <div class="footer-logo">【会社名】外壁塗装</div>
+                    <p class="footer-address">〒000-0000<br>東京都世田谷区〇〇町1-2-3</p>
+                    <p class="footer-contact-info">TEL: 0120-000-000<br>営業時間: 9:00〜18:00（日曜定休）</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">サービス</h3>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#services" class="footer-nav-link">外壁塗装</a></li>
+                            <li class="footer-nav-item"><a href="#services" class="footer-nav-link">屋根塗装</a></li>
+                            <li class="footer-nav-item"><a href="#services" class="footer-nav-link">その他リフォーム</a></li>
+                            <li class="footer-nav-item"><a href="#services" class="footer-nav-link">料金案内</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">会社情報</h3>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#company" class="footer-nav-link">会社概要</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">スタッフ紹介</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">採用情報</a></li>
+                            <li class="footer-nav-item"><a href="#company" class="footer-nav-link">アクセス</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">お役立ち情報</h3>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#works" class="footer-nav-link">施工事例</a></li>
+                            <li class="footer-nav-item"><a href="#testimonials" class="footer-nav-link">お客様の声</a></li>
+                            <li class="footer-nav-item"><a href="#faq" class="footer-nav-link">よくある質問</a></li>
+                            <li class="footer-nav-item"><a href="#maintenance" class="footer-nav-link">メンテナンス情報</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 【会社名】外壁塗装 All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- CTAフローティングボタン -->
+    <div class="floating-cta">
+        <a href="tel:0120-000-000" class="floating-tel" aria-label="電話でのお問い合わせ">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="#contact" class="floating-btn">
+            <i class="fas fa-paint-roller"></i> 無料お見積りはこちら
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
